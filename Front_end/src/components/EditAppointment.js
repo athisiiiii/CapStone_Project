@@ -30,12 +30,12 @@ import { useLocation } from 'react-router';
         <div>
 
             <form>
-             <h1 style={{ textAlign: "center" }}>{props.mode==="edit"? "EDIT DOCTOR FORM":"ADD NEW DOCTOR FORM"}</h1>
+             <h1 style={{ textAlign: "center" }}>{props.mode==="edit"? "EDIT APPOINTMENT ":"ADD NEW APPOINTMENT"}</h1>
                 <div style={{ textAlign: "center" }}>
 
                 <label for="aDate">APPOINTMENT DATE : </label>{props.mode==="edit"? <input type="date" name="appointmentDate" value={localState.appointmentDate} onChange={handleChange} required disabled />:<input type="date" name="appointmentDate" value={localState.appointmentDate} onChange={handleChange} required />}<br /><br />
 
-                <label for="tSlot">TIME SLOT: </label><input type="text" name="timeslot" value={localState.timeslot} onChange={handleChange} required /><br /><br />
+                <label for="tSlot">TIME SLOT: </label><input type="time" name="timeslot" value={localState.timeslot} onChange={handleChange} required /><br /><br />
 
                 <label for="bDate">BOOKING DATE :</label>{props.mode==="edit"? <input type="date" name="bookingDate" value={localState.bookingDate} onChange={handleChange} required disabled />:<input type="date" name="bookingDate" value={localState.bookingDate} onChange={handleChange} required />}<br /><br />
 

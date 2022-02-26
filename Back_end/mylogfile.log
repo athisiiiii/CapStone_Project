@@ -395,3 +395,95 @@
 21:07:13.705 INFO  connected to the mongodb 
 21:07:13.864 INFO  Recive appointment delete request 620f44897c464677dc4e1936 
 21:07:13.890 INFO  Appointment Deleted 
+22:35:53.667 INFO  connected to the mongodb 
+22:36:36.709 INFO  searching for appointment by date 2022-02-16 
+22:36:36.733 INFO  Searching by appointment Date 
+00:46:47.701 INFO  connected to the mongodb 
+00:52:12.628 INFO  searching for appointment by date 2022-02-26 
+00:52:12.795 INFO  Searching by appointment Date 
+00:52:13.028 INFO  searching for appointment by date 2022-02-26 
+00:52:13.034 INFO  Searching by appointment Date 
+00:52:13.183 INFO  searching for appointment by date 2022-02-26 
+00:52:13.188 INFO  Searching by appointment Date 
+00:52:13.338 INFO  searching for appointment by date 2022-02-26 
+00:52:13.343 INFO  Searching by appointment Date 
+00:52:23.307 INFO  searching for appointment by date 2022-02-17 
+00:52:23.312 INFO  Searching by appointment Date 
+00:52:47.500 INFO  Appointment edited 
+00:53:02.660 INFO  Recive appointment delete request 620f44d27c464677dc4e1938 
+00:53:02.665 INFO  Appointment Deleted 
+00:53:08.199 INFO  searching for appointment by date 2022-02-17 
+00:53:08.203 INFO  Searching by appointment Date 
+00:58:36.341 INFO  Appointment added 
+00:58:53.944 INFO  searching for appointment by date 2022-03-05 
+00:58:53.949 INFO  Searching by appointment Date 
+00:58:56.060 INFO  Recive appointment delete request 6217dc6421fa3330edfe6917 
+00:58:56.172 INFO  Appointment Deleted 
+00:58:57.435 INFO  Recive appointment delete request 6217dc6421fa3330edfe6917 
+00:58:57.442 INFO  Appointment Deleted 
+00:59:00.336 INFO  searching for appointment by date 2022-03-05 
+00:59:00.341 INFO  Searching by appointment Date 
+00:59:12.332 INFO  searching for appointment by date 2022-02-20 
+00:59:12.336 INFO  Searching by appointment Date 
+00:59:15.056 INFO  searching for appointment by date 2022-02-16 
+00:59:15.061 INFO  Searching by appointment Date 
+00:59:36.369 INFO  Appointment edited 
+00:59:50.553 INFO  searching for appointment by date 2022-02-16 
+00:59:50.560 INFO  Searching by appointment Date 
+12:08:05.454 INFO  connected to the mongodb 
+12:08:43.329 INFO  searching for appointment by date 2022-02-24 
+12:08:43.390 INFO  Searching by appointment Date 
+12:08:47.874 INFO  searching for appointment by date 2022-02-22 
+12:08:47.877 INFO  Searching by appointment Date 
+12:08:48.457 INFO  searching for appointment by date 2022-02-22 
+12:08:48.459 INFO  Searching by appointment Date 
+12:09:08.292 INFO  searching for appointment by date 2022-02-26 
+12:09:08.298 INFO  Searching by appointment Date 
+12:09:16.748 INFO  Recive appointment delete request 62179fd276592efcaa0dab18 
+12:09:16.767 INFO  Appointment Deleted 
+12:09:19.924 INFO  searching for appointment by date 2022-02-26 
+12:09:19.927 INFO  Searching by appointment Date 
+12:09:32.501 INFO  Appointment edited 
+12:09:40.362 INFO  searching for appointment by date 2022-02-26 
+12:09:40.368 INFO  Searching by appointment Date 
+12:10:10.709 INFO  Appointment added 
+12:15:35.873 INFO  searching for appointment by date 2022-02-15 
+12:15:35.877 INFO  Searching by appointment Date 
+12:15:46.209 INFO  Appointment edited 
+12:15:58.813 INFO  searching for appointment by date 2022-02-15 
+12:15:58.817 INFO  Searching by appointment Date 
+12:16:17.041 INFO  searching for appointment by date 2022-02-26 
+12:16:17.044 INFO  Searching by appointment Date 
+12:16:22.590 INFO  Recive appointment delete request 62160249c20dd54ee5a51ca7 
+12:16:22.635 INFO  Appointment Deleted 
+12:16:28.238 INFO  searching for appointment by date 2022-02-26 
+12:16:28.242 INFO  Searching by appointment Date 
+12:17:09.170 INFO  Appointment added 
+12:17:16.278 INFO  searching for appointment by date 2022-02-03 
+12:17:16.282 INFO  Searching by appointment Date 
+14:05:45.171 INFO  connected to the mongodb 
+14:07:26.693 INFO  searching for appointment by date 2022-02-26 
+14:07:26.863 INFO  Searching by appointment Date 
+14:08:50.809 INFO  Appointment edited 
+14:08:58.769 INFO  searching for appointment by date 2022-02-26 
+14:08:58.772 INFO  Searching by appointment Date 
+14:10:26.418 INFO  Appointment edited 
+14:10:27.737 INFO  Appointment edited 
+14:10:28.284 INFO  Appointment edited 
+14:10:28.470 INFO  Appointment edited 
+14:10:29.206 INFO  Appointment edited 
+14:11:31.989 INFO  Appointment edited 
+14:11:56.724 INFO  Appointment edited 
+14:12:19.463 INFO  searching for appointment by date 2022-02-26 
+14:12:19.467 INFO  Searching by appointment Date 
+14:13:22.940 INFO  Appointment added 
+14:13:28.480 INFO  searching for appointment by date 2022-02-26 
+14:13:28.484 INFO  Searching by appointment Date 
+14:13:38.774 INFO  Recive appointment delete request 621896aa6d698b1667721977 
+14:13:38.778 INFO  Appointment Deleted 
+14:13:42.734 INFO  searching for appointment by date 2022-02-26 
+14:13:42.739 INFO  Searching by appointment Date 
+14:17:05.973 INFO  connected to the mongodb 
+14:17:06.236 INFO  Recive appointment delete request 620f44897c464677dc4e1936 
+14:17:06.271 INFO  Appointment Deleted 
+14:20:24.399 INFO  connected to the mongodb 

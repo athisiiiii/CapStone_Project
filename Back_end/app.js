@@ -148,7 +148,8 @@ app.get("/appointments/delete/:id", (req, res) => {
 			log.info(`Appointment Deleted`);
 		})
 		.catch((err) => {
-			console.log(err.Message);
+			log.error(err)
+			res.status(400).send({msg:"Wrong format given"});
 		});
 });
 
@@ -160,7 +161,9 @@ app.post("/appointments/add", (req, res) => {
 			log.info(`Appointment added`);
 		})
 		.catch((err) => {
-			console.log(err.Message);
+			log.error(err)
+			res.status(400).send({msg:"Wrong format given"});
+			//console.log(err.Message);
 		});
 });
 
@@ -172,7 +175,8 @@ app.post("/appointments/edit/:id", (req, res) => {
 			log.info(`Appointment edited`);
 		})
 		.catch((err) => {
-			console.log(err.Message);
+			log.error(err)
+			res.status(400).send({msg:"Wrong format given"});
 		});
 });
 

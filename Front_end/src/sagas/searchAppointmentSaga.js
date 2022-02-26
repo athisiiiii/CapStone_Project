@@ -7,10 +7,11 @@ function* searchAppointment(action) {           // go to node app.js and fetch t
 	const appointmentSearchResult = yield fetch(
 		"http://localhost:8000/appointments/search/appointmentDate/" +
 			action.appointmentDate
-	).then((response) => response.json());
+	).then((response) => response.json())
+  .catch((err) => console.log(err))
 	yield put({ type: "SEARCH_A_APPOINTMENT_SUCCESSFUL", appointmentSearchResult: appointmentSearchResult }); //dispatching an action
 }
-function* actionWatcher() {     //wait for the event
+function* actionWatcherForSearchAppointment() {     //wait for the event
 	yield takeLatest(
 		"SEARCH_APPOINTMENT_WITH_APPOINTMENT_DATE",
 		searchAppointment);
@@ -20,13 +21,12 @@ function* actionWatcher() {     //wait for the event
 function* deleteAppointment(action) {
   console.log("Inside appointment saga delete");
   console.log(action);
-  const json = yield fetch("http://localhost:8000/appointments/delete/" + action.id).then((response) =>
-
-    response.json()
-  );
+  const json = yield fetch("http://localhost:8000/appointments/delete/" + action.id)
+  .then((response) =>response.json())
+  .catch((err) => console.log(err))
   yield put({ type: "REMOVE_APPOINTMENT", json: json });
 }
-function* actionWatcher2() {
+function* actionWatcherForDeleteAppointment() {
   yield takeLatest("REMOVE_APPOINTMENT_WITH_APPOINTMENT_DATE", deleteAppointment);
 }
 
@@ -48,12 +48,14 @@ function* addNewAppointment(action) {
     headers: {
       "Content-type": "application/json;chartset=UTF-8",
     },
-  }).then((res) => res.json());
+  })
+  .then((res) => res.json())
+  .catch((err) => console.log(err))
 
   yield put({ type: "ADDED_A_APPOINTMENT_SUCCESSFUL", serverMsg: serverResponse.msg });
 }
 
-function* actionWatcher1() {
+function* actionWatcherForAddAppointment() {
   yield takeLatest("ADD_A_APPOINTMENT_TO_BACKEND", addNewAppointment);
 }
 
@@ -71,12 +73,13 @@ function* editAppointment(action) {
     headers: {
       "Content-type": "application/json;chartset=UTF-8",
     },
-  }).then((res) => res.json());
+  }).then((res) => res.json())
+  .catch((err) => console.log(err))
   console.log(serverResponse.msg);
   yield put({ type: "EDITED_A_APPOINTMENT_SUCCESSFUL", serverMsg: serverResponse.msg, });
 }
 
-function* actionWatcher3() {
+function* actionWatcherForEditAppointment() {
   yield takeLatest("EDITED_A_APPOINTMENT_TO_BACKEND", editAppointment);
 }
 
@@ -84,10 +87,10 @@ function* actionWatcher3() {
 // for all the above sagas we need to create root saga
 export default function* rootSaga() {
   yield all([
-    actionWatcher(),
-    actionWatcher1(),
-    actionWatcher2(),
-    actionWatcher3()
+    actionWatcherForSearchAppointment(),
+    actionWatcherForAddAppointment(),
+    actionWatcherForDeleteAppointment(),
+    actionWatcherForEditAppointment()
 
   ]);
 }

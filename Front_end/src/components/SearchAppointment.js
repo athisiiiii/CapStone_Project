@@ -50,7 +50,8 @@ const SearchAppointment = (props) => {
                     {props.appointmentData.searchResults ? props.appointmentData.searchResults.map((item, key) => <tr><td> {item.appointmentDate}</td><td>{item.timeslot}</td><td>{item.bookingDate}</td><td>{item.doctorNumber}</td><td>{item.patientNumber}</td>
                     <td><Link to={{pathname:"/appointments/edit/?appointmentDate="+item.appointmentDate+"&_id="+item._id+"&timeslot="+item.timeslot+"&bookingDate="+item.bookingDate+"&doctorNumber="+item.doctorNumber+"&patientNumber="+item.patientNumber}}>EDIT</Link></td> 
                     <td><button onClick={(e) => removeAppointment(e,item._id)} >DELETE</button></td></tr>) : ""}
-                  </table>                  
+                  </table>  
+                  {props.appointmentData.deleteAppointmentSuccess ? props.appointmentData.deleteAppointmentSuccess : ""}                
             </form>
     </div>
   );
